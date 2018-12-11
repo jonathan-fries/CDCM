@@ -64,3 +64,5 @@ typings/
 .idea/
 .idea/vcs.xml
 
+#webpack distro
+/client/dist

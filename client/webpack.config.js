@@ -1,3 +1,5 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
     devServer: {
         inline:true,
@@ -15,7 +17,11 @@ module.exports = {
             {test:/\.js$/,
                 exclude:/node_modules/,
                 use: {loader: 'babel-loader'}
-            }
+            },
+            {test:/\.(scss|sass)$/, use: [{loader: MiniCssExtractPlugin.loader}, "css-loader", "sass-loader" ]}
         ]
-    }
+    },
+    plugins: [
+        new MiniCssExtractPlugin({filename: "app.css"})
+    ]
 };
