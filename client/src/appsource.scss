@@ -13,4 +13,35 @@ body {
   margin: 0px;
   padding: 0;
   height: 100%;
+  background-color: black;
+  color:white;
+}
+
+.topNav
+{
+
+  float: left;
+  font-size: large;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+  }
+
+  li.icon {display: none;}
+
+  a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+  }
+}
+
+.clearNav{
+  clear:both;
 }

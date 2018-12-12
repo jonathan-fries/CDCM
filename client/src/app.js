@@ -9,8 +9,10 @@ export default class App extends React.Component{
 
     render(){
         return <Navigation>
+              <div className="clearNav">
                 <Route exact path="/" component={Home}/>
                 <Route path = "/chat" component = {Chat} />
+              </div>
           </Navigation>;
     }
 }
