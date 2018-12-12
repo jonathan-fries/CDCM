@@ -66,3 +66,6 @@ typings/
 
 #webpack distro
 /client/dist
+
+#contentful config values
+/client/src/config.js
