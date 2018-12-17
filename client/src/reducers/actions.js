@@ -1,4 +1,4 @@
-export const LOADED_ClIENT = 'LOADED_CLIENT';
+export const LOADED_CLIENT = 'LOADED_CLIENT';
 
 export function setAppClientState (authState) {
   return {
