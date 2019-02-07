@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
-import {LOADED_CLIENT, } from './actions'
+import {LOADED_CLIENT} from './actions'
 
-import { deliveryAccessToken, spaceId } from '../../config'
+import { deliveryAccessToken, spaceId } from '../config'
 
 const initialState = {
   authState: 'loading',
